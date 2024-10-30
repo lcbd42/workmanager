@@ -17,16 +17,5 @@
 
     "permissions": [
       "storage","activeTab","scripting"
-    ],
-
-    "content_scripts":  [
-        {
-          "js": [
-            "contentscript.js"
-          ],
-          "matches": [
-            "https://*/*"
-          ]
-        }
-      ]
+    ]
   }
