@@ -1,0 +1,96 @@
+body {
+    width: 600px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 75%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff; /* 기본 텍스트 색상 흰색 */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    color: #e67e22; /* 버튼 텍스트 색상 오렌지색으로 변경 */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+    margin-bottom: 10px;  /* 간격 추가 */
+    text-align: left;  /* 텍스트 좌측 정렬 */
+    color: #333; /* 작업 항목 텍스트 색상을 검정색으로 변경 */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 10px;  /* X 버튼과 텍스트 사이에 여백 추가 */
+}
+
+li span {
+    padding-left: 10px;  /* 텍스트 패딩 추가 */
+    padding-right: 10px; /* 텍스트 패딩 추가 */
+}
