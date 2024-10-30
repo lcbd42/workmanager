@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "work manager by junhee",
-    "description": "made by lee junhee",
+    "name": "work_manager",
+    "description": "made_by_lee_junhee",
     "version": "1.0",
     "icons": {
       "16": "images/16_sam.png",
