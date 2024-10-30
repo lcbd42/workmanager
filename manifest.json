@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "MyFrequencyTest",
+    "description": "Test...",
+    "version": "1.0",
+    "icons": {
+      "16": "images/16_sam.png",
+      "32": "images/32_sam.png",
+      "48": "images/48_sam.png",
+      "128": "images/128_sam.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+
+    "host_permissions": ["https://*/*"],
+
+    "permissions": [
+      "storage","activeTab","scripting"
+    ],
+
+    "content_scripts":  [
+        {
+          "js": [
+            "contentscript.js"
+          ],
+          "matches": [
+            "https://*/*"
+          ]
+        }
+      ]
+  }
